@@ -11,7 +11,6 @@ const Main = () => {
     const quizsData = useLoaderData();
     const quizs = quizsData.data;
 
-
     return (
 
         <QuizContex.Provider value={quizs}>

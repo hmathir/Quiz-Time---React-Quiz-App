@@ -5,6 +5,7 @@ import QuizOptions from "./QuizOptions";
 
 const SingleQuiz = ({ singleQus }) => {
     const [toggle, setToggle] = useState(false);
+    
     const { question, correctAnswer, options } = singleQus;
 
     return (
