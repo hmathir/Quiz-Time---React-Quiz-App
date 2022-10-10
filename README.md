@@ -8,7 +8,7 @@
 
 ## After npx create react app, I will setup my whole project.
 
-## I will setup ##Tailwind & ##DaisyUI for design.
+## I will setup Tailwind & DaisyUI for design.
 
 ## Then I Will install React Router and FontAwsome.
 
