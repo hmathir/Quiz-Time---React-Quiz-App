@@ -9,7 +9,7 @@ const SingleQuiz = ({ singleQus }) => {
 
     return (
         <div>
-            <div className="border border-black w-9/12 mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mt-4 p-5 rounded-xl text-white">
+            <div className="border border-black md:w-9/12 mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mt-4 p-5 rounded-xl text-white">
                 <button onClick={() => setToggle(!toggle)}>
                     <FontAwesomeIcon icon={toggle ? faEye : faEyeSlash}></FontAwesomeIcon>
                 </button>
@@ -27,7 +27,7 @@ const SingleQuiz = ({ singleQus }) => {
                 </div>
                 <h1 className="text-3xl font-bold">{question}</h1>
 
-                <div className="grid grid-cols-2 gap-4 ">
+                <div className="grid md:grid-cols-2 gap-4 mt-3 ">
                     {options.map((option,idx) => <QuizOptions key={idx} option={option} singleQus={singleQus}></QuizOptions>)}
                 </div>
             </div>
