@@ -1,21 +1,27 @@
+import { useState } from 'react';
 import { toast } from 'react-toastify';
 
 
 const QuizOptions = ({option,singleQus}) => {
+    const [value,setValue] = useState('');
+    
     const {correctAnswer, id } = singleQus;
     const handleButton = () => {
         if(option === correctAnswer){
-            toast.success(`Correct`)
+            toast.success(`Correct`);
+            setValue('Correct');
         }
         else{
-            toast.warn(`Incorrect Ans. Correct is ${correctAnswer}`)
+            toast.warn(`Incorrect. Correct is ${correctAnswer}`);
+            setValue('Incorrect');
         }
     }
     return (
         <div>
             <div className="flex gap-2">
-                <input type="radio" name={id} id={option} />
-                <label onClick={() => handleButton()} htmlFor={option}>{option}</label>
+                <input onClick={() => handleButton()} type="radio" name={id} id={option} />
+                <label htmlFor={option}>{option}</label>
+                <h1 className={`font-bold ${value === 'Correct' ? `bg-green-600 px-2` : `bg-red-600` }`}>{value}</h1>
             </div>
         </div>
     );
