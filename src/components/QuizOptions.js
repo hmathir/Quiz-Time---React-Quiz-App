@@ -14,6 +14,7 @@ const QuizOptions = ({option,singleQus}) => {
         else{
             toast.warn(`Incorrect. Correct is ${correctAnswer}`);
             setValue('Incorrect');
+
         }
     }
     return (
