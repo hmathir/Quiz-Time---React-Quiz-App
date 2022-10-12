@@ -2,6 +2,7 @@ import { createContext } from 'react';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 export const QuizContex = createContext([]);
@@ -17,6 +18,7 @@ const Main = () => {
             <ToastContainer />
             <Header></Header>
             <Outlet></Outlet>
+            <Footer></Footer>
         </QuizContex.Provider>
     );
 };

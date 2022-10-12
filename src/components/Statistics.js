@@ -4,6 +4,7 @@ import {
   BarChart,
   CartesianGrid,
   Legend,
+  ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis
@@ -19,31 +20,30 @@ const Statistics = () => {
         <h1>Chart for Quiz Amount and ID:</h1>
       </div>
       <div className="md:flex gap-5 justify-between">
-        <div className="mt-20">
-          <BarChart width={330} height={450} data={data}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis dataKey="total" />
-            <Tooltip />
-            <Legend />
-            <Bar dataKey="total" fill="#8823d8" />
-          </BarChart>
+        <div className="mt-20 md:hidden">
+          <ResponsiveContainer width={"100%"} height={350}>
+            <BarChart data={data}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis dataKey="total" />
+              <Tooltip />
+              <Legend />
+              <Bar dataKey="total" fill="#8823d8" />
+            </BarChart>
+          </ResponsiveContainer>
         </div>
-        <div className="mt-20">
-          <BarChart width={330} height={450} data={data}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis dataKey="id" />
-            <Tooltip />
-            <Legend />
-            <Bar dataKey="id" fill="#8884d8" />
-          </BarChart>
+        <div className="hidden md:block">
+        <BarChart width={700} height={350} data={data}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis dataKey="total" />
+              <Tooltip />
+              <Legend />
+              <Bar dataKey="total" fill="#8823d8" />
+            </BarChart>
         </div>
       </div>
-
-
     </div>
-
   );
 };
 

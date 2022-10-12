@@ -1,19 +1,26 @@
-# Quiz Time
+# Quiz Time BD ❤️
 
-### Live Site:
+❤ Made With [Create React App](https://github.com/facebook/create-react-app) ❤
 
-## https://quiztimebd.netlify.app/
+## Live Netlify Site:
 
-## WorkFlow:
+Live Link: [Quiz Time BD](https://quiztimebd.netlify.app/)
 
-## After npx create react app, I will setup my whole project.
+## Core Features:
 
-## I will setup Tailwind & DaisyUI for design.
+- Quiz About Some Programming Basic Topics.
+- Ans indivisual qus and Calculate total Answers.
+- Check Correct Ans after submit Quiz Ans..
 
-## Then I Will install React Router and FontAwsome.
+## Technology for this project:
 
-## After That I was starting to create components and delete rest files.
+- [ReactJs] - HTML enhanced for web apps.
+- [ReactRouter] - React Router V.6.1.
+- [TailwindCSS] - As CSS Framework.
+- [Tostify] - For Notify Ans is Correct or Not.
+- [Rechart] - For statistics.
+- [dasyUi] - As Tailwind Componenet Library.
 
-## Then I fetch data using "loader" and pass that via useContex.
+## Check Out Me:
 
-## Then I will distructure and use data and design rest things.
+https://facebook.com/athirofficial
